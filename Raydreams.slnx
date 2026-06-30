@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/Raydreams.Draw.Tests/Raydreams.Draw.Tests.csproj" />
+  </Folder>
+  <Project Path="Raydreams.Meme/Raydreams.Meme.csproj" />
+  <Project Path="Raydreams.Drawing/Raydreams.Drawing.csproj" />
+  <Project Path="Raydreams.Skia/Raydreams.Skia.csproj" />
+</Solution>
