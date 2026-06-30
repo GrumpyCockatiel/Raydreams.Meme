@@ -7,7 +7,6 @@ For now, Raydreams.Meme is a simple x-platform .NET command line tool that will 
 + Add default settings to settings file
 + Move some hard coded values to the settings file
 + Add footer option
-+ Add Save to JPEG option
 
 ## Setup
 
@@ -54,23 +53,23 @@ You can copy the `bin/Release/net10.0` folder to wherever you like and even rena
 ```json
 {
     "src": "https://raydreamsdevsa002.blob.core.windows.net/public/cGrQXATxQBb.jpg",
-    "os": 40,
+    "os": 20,
     "border": "orange",
-    "pad": 40,
+    "pad": 20,
     "filter": "Identity",
     "crop": "Original",
     "title": "SPACE GHOST",
-    "ts": 80,
-    "tf":"Georgia Pro Semibold",
+    "ts": 70,
+    "tf": "Georgia Pro Semibold",
     "tc": "black",
     "tsc": "white",
     "tsw": 50,
-    "body": "Why, Banjo, Why?",
-    "bc": "white",
-    "bs": 200,
+    "body": "Why, Banjo, Why?\nÅ Mess With The Best, Die Like The Rest Ç! The Quick Brown Fox Jumped Over the Lazy Dog!",
+    "bc": "black",
+    "bs": 50,
     "bsw": 50,
     "bsc": "yellow",
-    "bf":"Georgia",
+    "bf": "Georgia",
     "valign": "bottom"
 }
 ```
@@ -88,7 +87,7 @@ You can copy the `bin/Release/net10.0` folder to wherever you like and even rena
 |title stroke color|tsc|Color String|The color of the title stroke|black|
 |title stroke weight|tsw|int [0,100]|The weight of the title font outline as a percent of the title font size.|0|
 |crop|crop|Original\|CenterSquare\|TopLeftSquare\| BottomRightSquare|How to crop the original image. Leave it as is or crop square either centered or left/top or right/bottom depending on the orientation.|Original|
-|body|body|string|The body text to appear in the meme.|
+|body|body|string|The body text to appear in the meme. Use `\n` to force line breaks|
 |body font family|bf|string (Font Family Name)|The name of the font family to use for the body font.|Arial|
 |body color|bc|Color String|The color of the body text.|white|
 |body font size|bs|float|The size of the body font in pt.|24|
